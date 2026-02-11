@@ -7,11 +7,15 @@ La aplicación implementa persistencia de datos mediante una base de datos relac
 
 El código se organiza siguiendo una estructura modular para separar la lógica de negocio, los modelos de datos y la persistencia:
 
-- **Main.py**: Punto de entrada de la aplicación y gestión del menú principal.
-- **model/**: Contiene las definiciones de clases como `Articulo`, `Juego`, `Usuario` y `Admin`.
-- **controller/**: Módulos de lógica como `GestionAlmacen` y `Autenticador`.
-- **database/**: Gestión de la conexión a la base de datos y ejecución de scripts SQL.
-- **helpers/**: Herramientas auxiliares para validación de entrada, excepciones personalizadas y generación de archivos.
+```text
+PROYECTO-PROG/
+├── controller/        # Lógica de gestión (Almacén y Autenticación)
+├── database/          # Conexión a SQLite y ejecución de scripts SQL
+├── model/             # Definición de clases, Herencia y POO
+├── helpers/           # Validadores de entrada, excepciones y generación de archivos
+├── data/              # Directorio de persistencia (DB, tickets y backups)
+└── Main.py            # Punto de entrada y gestión de menús
+```
 
 ## Características Técnicas
 
