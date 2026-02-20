@@ -32,6 +32,7 @@ def inicializar_bbdd(db):
     for tabla in tablas:
         db.ejecutar_accion(tabla)
 
+
     # Creamos un admin por defecto si la tabla está vacía
     usuarios = db.consultar("SELECT * FROM usuarios")
     if not usuarios:

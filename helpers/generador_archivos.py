@@ -10,6 +10,7 @@ def guardar_ticket_txt(pedido, usuario_nombre):
     fecha_hoy = datetime.now().strftime("%Y%m%d_%H%M%S")
     filename = f"data/tickets/ticket_{usuario_nombre}_{fecha_hoy}.txt"
 
+
     with open(filename, "w", encoding="utf-8") as f:
         f.write("--- TICKET DE SALIDA DE ALMACÉN ---\n")
         f.write(f"Fecha: {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}\n")

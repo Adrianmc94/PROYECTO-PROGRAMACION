@@ -10,6 +10,8 @@ class SinStockError(AlmacenError):
         self.mensaje = f"Error: '{producto}' solo tiene {disponible} unidades (Pediste {solicitado})."
         super().__init__(self.mensaje)
 
+
 class DatabaseError(AlmacenError):
     """Lanzada cuando falla la conexión o una consulta SQL"""
     pass
+

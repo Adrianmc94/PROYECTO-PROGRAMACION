@@ -18,6 +18,7 @@ class Autenticador:
                 else:
                     return Usuario(user_data['id_usuario'], user_data['username'], user_data['password'])
 
+
     def registrar_usuario(self, username, password, rol):
         """Permite crear nuevos usuarios en la BBDD."""
         try:

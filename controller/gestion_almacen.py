@@ -80,6 +80,7 @@ class GestionAlmacen:
         except Exception as e:
             print(f"Error crítico al procesar pedido: {e}")
 
+
     def realizar_backup(self):
         """ESTA FUNCIÓN DEBE ESTAR DENTRO DE LA CLASE (Indentada con 4 espacios)"""
         if not self.inventario_memoria:

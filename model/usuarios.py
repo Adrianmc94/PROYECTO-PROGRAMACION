@@ -10,6 +10,7 @@ class Usuario:
     def verificar_password(self, pwd):
         return self.__password == pwd
 
+
     def __str__(self):
         return f"Usuario: {self.username} | Rol: {self.rol.upper()}"
 

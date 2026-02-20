@@ -27,6 +27,7 @@ class Articulo:
             raise ValueError("No hay suficiente stock disponible.")
         self._stock = valor
 
+
 class Juego(Articulo):
     def __init__(self, id_prod, nombre, precio, stock, plataforma, genero):
         super().__init__(id_prod, nombre, precio, stock)

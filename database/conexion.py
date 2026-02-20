@@ -28,6 +28,7 @@ class DBConexion:
         except sqlite3.Error as e:
             raise DatabaseError(f"Error en SQL: {e}")
 
+
     def consultar(self, query, params=()):
         """Para SELECT (devuelve todos los resultados)"""
         try:

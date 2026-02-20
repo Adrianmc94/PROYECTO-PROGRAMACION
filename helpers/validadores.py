@@ -12,6 +12,7 @@ def leer_entero(mensaje):
         except ValueError:
             print("Error: Por favor, introduce un número entero válido.")
 
+
 def leer_float(mensaje):
     """Valida que la entrada sea un número decimal positivo."""
     while True:

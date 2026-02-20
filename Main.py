@@ -15,6 +15,7 @@ def menu_principal(usuario, gestion, auth):
         print("2. Registrar salida de producto")
         print("3. Confirmar pedido (Generar ticket)")
 
+
         if usuario.rol == "admin":
             print("4. Añadir un nuevo producto (ADMIN)")
             print("5. Exportar backup en JSON  (ADMIN)")
